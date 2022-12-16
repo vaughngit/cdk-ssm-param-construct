@@ -29,6 +29,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // packageName: undefined,  /* The "name" in package.json. */
   gitignore: common_exclude,
   npmignore: common_exclude,
+  releaseToNpm: false
 });
 
 
