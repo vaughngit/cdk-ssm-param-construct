@@ -1,5 +1,5 @@
 {
-  "name": "ssm-param-cdk-construct",
+  "name": "vt-ssm-param-cdk-construct",
   "repository": {
     "type": "git",
     "url": "https://github.com/vaughngit/cdk-ssm-param-construct.git"
@@ -16,6 +16,7 @@
     "eslint": "npx projen eslint",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
+    "package:js": "npx projen package:js",
     "post-compile": "npx projen post-compile",
     "post-upgrade": "npx projen post-upgrade",
     "pre-compile": "npx projen pre-compile",
