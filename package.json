@@ -1,8 +1,8 @@
 {
-  "name": "ssm-param",
+  "name": "ssm-param-cdk-construct",
   "repository": {
     "type": "git",
-    "url": "https://github.com/awsalvin/ssm-param.git"
+    "url": "https://github.com/vaughngit/cdk-ssm-param-construct.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -29,8 +29,8 @@
     "projen": "npx projen"
   },
   "author": {
-    "name": "awsalvin",
-    "email": "awsalvin@amazon.com",
+    "name": "Alvin Vaughn",
+    "email": "alvin.vaughn@outlook.com",
     "organization": false
   },
   "devDependencies": {
@@ -38,7 +38,7 @@
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.54.0",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -58,11 +58,16 @@
     "typescript": "^4.9.4"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.54.0",
     "constructs": "^10.0.5"
   },
   "keywords": [
-    "cdk"
+    "aws",
+    "cdk",
+    "custom-resource",
+    "parameter",
+    "sdk",
+    "ssm"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
