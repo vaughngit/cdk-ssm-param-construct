@@ -11,8 +11,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   defaultReleaseBranch: 'main',
   name: 'ssm-param-cdk-construct',
   repositoryUrl: 'https://github.com/vaughngit/cdk-ssm-param-construct.git',
-  docgen: true, 
- // packageManager: NodePackageManager.NPM, 
+  docgen: true,
+  // packageManager: NodePackageManager.NPM,
   keywords: [
     'cdk',
     'aws',
@@ -28,9 +28,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
   gitignore: common_exclude,
-  npmignore: common_exclude
+  npmignore: common_exclude,
 });
-
 
 
 project.synth();

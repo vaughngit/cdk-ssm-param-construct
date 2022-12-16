@@ -2,10 +2,10 @@ import { App, Stack } from 'aws-cdk-lib';
 import { SSMParameter, SSMParameterType } from './index';
 
 
-const aws_region = 'us-east-2'
-const solution = "apigateway_cognito_auth0"
-const environment = "dev"
-const costcenter = 'ergon'
+const aws_region = 'us-east-2';
+const solution = 'apigateway_cognito_auth0';
+const environment = 'dev';
+const costcenter = 'ergon';
 
 export class IntegTesting {
   readonly stack: Stack[];
@@ -14,14 +14,15 @@ export class IntegTesting {
 
     const env = {
       account: process.env.CDK_DEFAULT_ACCOUNT,
-      region: aws_region || process.env.CDK_DEFAULT_REGION
+      region: aws_region || process.env.CDK_DEFAULT_REGION,
     };
 
-    const stack = new Stack(app, 'my-demo-stack', { env, 
+    const stack = new Stack(app, 'my-demo-stack', {
+      env,
       tags: {
         solution,
         environment,
-        costcenter
+        costcenter,
       },
     });
 
