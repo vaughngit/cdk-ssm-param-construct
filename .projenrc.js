@@ -30,7 +30,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   gitignore: common_exclude,
   npmignore: common_exclude,
   //releaseToNpm: false,
-  buildWorkflow: false,
+  //buildWorkflow: false,
+  publishToNuget: {
+    dotNetNamespace: 'Vaughntech.cdk',
+    packageId: 'construct.ssm.parameter',
+  },
+
 });
 
 
